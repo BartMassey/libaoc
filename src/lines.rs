@@ -39,12 +39,9 @@ impl<T: Read> Iterator for InputLines<T> {
     /// Errors in reading the next line (but not EOF) will
     /// cause a panic here.
     fn next(&mut self) -> Option<String> {
-        match self.lines.next() {
-            Some(result) => {
-                Some(result.expect("could not read input line"))
-            }
-            None => None,
-        }
+        self.lines
+            .next()
+            .map(|result| result.expect("could not read input line"))
     }
 }
 

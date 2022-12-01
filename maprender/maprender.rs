@@ -33,7 +33,7 @@ pub fn render<H>(map: &HashSet<(i64, i64), H>) -> String
 where
     H: std::hash::BuildHasher,
 {
-    let ((min_x, min_y), (max_x, max_y)) = bounding_box(&map);
+    let ((min_x, min_y), (max_x, max_y)) = bounding_box(map);
     let width = (max_x + 1 - min_x) as usize;
     let height = (max_y + 1 - min_y) as usize;
     let mut result = String::with_capacity((width + 1) * height);

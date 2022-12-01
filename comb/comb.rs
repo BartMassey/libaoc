@@ -35,8 +35,8 @@ where
         return r;
     };
     let mut es = source.clone();
-    for e in source.iter().cloned() {
-        es.remove(&e);
+    for e in source.iter() {
+        es.remove(e);
         let cs = *Box::new(choose(&es, n - 1));
         for mut c in cs {
             c.insert(e.clone());
