@@ -23,7 +23,3 @@ members = [
     "astar", "comb", "geom", "hexstring", "maprender",
     "numberfns", "reparse",
 ]
-default-members = [
-    "astar", "comb", "geom", "hexstring", "maprender",
-    "numberfns", "reparse",
-]
