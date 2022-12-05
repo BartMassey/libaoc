@@ -183,7 +183,7 @@ pub trait SearchState {
     /// Arguments are the source state and the global
     /// information.
     ///
-    /// [1]: http://en.wikipedia.org/wiki/Admissible_heuristic
+    /// [1]: https://en.wikipedia.org/wiki/Admissible_heuristic
     /// [2]: https://en.wikipedia.org/wiki/Dijkstra's_algorithm
     fn hcost(&self, _: &Self::Global) -> usize {
         0
@@ -194,6 +194,8 @@ pub trait SearchState {
 /// given start state to some given goal, using
 /// supplied global data. The return value is the cost
 /// and path (sequence of states) if a path is found.
+///
+/// [1]: https://en.wikipedia.org/wiki/A*_search_algorithm
 pub fn a_star<S>(
     global: &S::Global,
     start: &S,
