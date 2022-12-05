@@ -26,10 +26,10 @@ pub use self::trace::*;
 pub mod into_chars;
 pub use self::into_chars::*;
 
-pub use astar;
-pub use comb;
-pub use geom;
-pub use hexstring;
-pub use maprender;
-pub use numberfns;
-pub use reparse;
+pub extern crate astar;
+pub extern crate comb;
+pub extern crate geom;
+pub extern crate hexstring;
+pub extern crate maprender;
+pub extern crate numberfns;
+pub extern crate reparse;
