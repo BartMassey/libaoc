@@ -20,8 +20,7 @@
 
 use std::marker::PhantomData;
 
-use aoc::convert::ConvertInto;
-use crate::dirns;
+use crate::{convert::ConvertInto, dirns};
 
 /// Description of the grid, for possible clipping.
 #[derive(Copy, Clone)]

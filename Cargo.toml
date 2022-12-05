@@ -5,11 +5,11 @@
 
 [package]
 name = "aoc"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Bart Massey <bart@cs.pdx.edu>"]
 publish = false
-description = "Library for Advent of Code 2016 solutions."
-repository = "http://github.com/BartMassey/advent-of-code-2016"
+description = "Library for Advent of Code solutions."
+repository = "http://github.com/BartMassey/libaoc"
 readme = "README.md"
 license = "MIT"
 edition = "2021"
@@ -18,8 +18,34 @@ edition = "2021"
 default = []
 trace = []
 
+[dependencies.aoc-astar]
+path = "./astar"
+
+[dependencies.aoc-comb]
+path = "./comb"
+
+[dependencies.aoc-geom]
+path = "./geom"
+
+[dependencies.aoc-hexstring]
+path = "./hexstring"
+
+[dependencies.aoc-maprender]
+path = "./maprender"
+
+[dependencies.aoc-numberfns]
+path = "./numberfns"
+
+[dependencies.aoc-reparse]
+path = "./reparse"
+
 [workspace]
 members = [
-    "astar", "comb", "geom", "hexstring", "maprender",
-    "numberfns", "reparse",
+    "astar",
+    "comb",
+    "geom",
+    "hexstring",
+    "maprender",
+    "numberfns",
+    "reparse",
 ]

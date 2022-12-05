@@ -14,9 +14,6 @@
 // For an explanation of the structure of this file, see
 // http://stackoverflow.com/questions/22596920/
 
-pub mod convert;
-pub use self::convert::*;
-
 pub mod args;
 pub use self::args::*;
 
@@ -28,3 +25,11 @@ pub use self::trace::*;
 
 pub mod into_chars;
 pub use self::into_chars::*;
+
+pub use astar;
+pub use comb;
+pub use geom;
+pub use hexstring;
+pub use maprender;
+pub use numberfns;
+pub use reparse;

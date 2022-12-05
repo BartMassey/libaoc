@@ -6,7 +6,7 @@
 //! Direction and rotation management for Advent of Code
 //! solutions.
 
-use aoc::ConvertInto;
+use crate::convert::ConvertInto;
 
 /// Symbolic direction constants. It is unfortunate that
 /// these need to be matched to DIRNS and FACINGS below.
