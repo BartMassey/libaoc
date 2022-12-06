@@ -26,10 +26,17 @@ pub use self::trace::*;
 pub mod into_chars;
 pub use self::into_chars::*;
 
+#[cfg(feature = "astar")]
 pub extern crate astar;
+#[cfg(feature = "comb")]
 pub extern crate comb;
+#[cfg(feature = "geom")]
 pub extern crate geom;
+#[cfg(feature = "hexstring")]
 pub extern crate hexstring;
+#[cfg(feature = "maprender")]
 pub extern crate maprender;
+#[cfg(feature = "numberfns")]
 pub extern crate numberfns;
+#[cfg(feature = "reparse")]
 pub extern crate reparse;

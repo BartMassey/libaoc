@@ -17,27 +17,42 @@ edition = "2021"
 [features]
 default = []
 trace = []
+astar = ["aoc-astar"]
+comb = ["aoc-comb"]
+geom = ["aoc-geom"]
+hexstring = ["aoc-hexstring"]
+maprender = ["aoc-maprender"]
+numberfns = ["aoc-numberfns"]
+reparse = ["aoc-reparse"]
+
 
 [dependencies.aoc-astar]
 path = "./astar"
+optional = true
 
 [dependencies.aoc-comb]
 path = "./comb"
+optional = true
 
 [dependencies.aoc-geom]
 path = "./geom"
+optional = true
 
 [dependencies.aoc-hexstring]
 path = "./hexstring"
+optional = true
 
 [dependencies.aoc-maprender]
 path = "./maprender"
+optional = true
 
 [dependencies.aoc-numberfns]
 path = "./numberfns"
+optional = true
 
 [dependencies.aoc-reparse]
 path = "./reparse"
+optional = true
 
 [workspace]
 members = [
